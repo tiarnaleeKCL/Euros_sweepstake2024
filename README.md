@@ -2,8 +2,6 @@
 
 Pick the winners, runners up, biggest disappointment and the underdogs. The winner will be the person who scores the most points!
 
-You can submit your predicitons [**here**](https://forms.gle/zwxmRRJyF9hi2TzDA)
-
 The rankings are from the [official UEFA website](https://www.uefa.com/nationalassociations/uefarankings/country/?year=2024) and are accurate as of the tournament starting.
 
 We know some of you like data, so here's the scoring system:
