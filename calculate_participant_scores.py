@@ -15,16 +15,16 @@ rankings = pd.read_excel('./Euros ranking example.xlsx', header=1)
 predictions = pd.read_excel('./Predictions example.xlsx', header=1, index_col=0)
 
 # Replace positions in the competition with position numbers
-position_map = {'Winner': 0, 'Runner up': 1, 'Semis': 2, 'Quarters': 3, 'Group stage': 4}
+position_map = {'Winner': 0, 'Runner up': 1, 'Semis': 2, 'Quarters': 3, 'Round of 16': 4, 'Group stage': 5}
 rankings['Position'] = rankings['Position'].replace(position_map)
 
 # Points assigned for each category
 points = {
-    'winner': [5, 3, 2, 1, 0], # More points awarded for guessing the winner
-    'runners_up': [3, 5, 2, 1, 0], # Most points awarded for correctly guessing the runner up but more points are awarded
+    'winner': [6, 4, 3, 2, 1, 0], # More points awarded for guessing the winner
+    'runners_up': [4, 6, 3, 2, 1, 0], # Most points awarded for correctly guessing the runner up but more points are awarded
     # for guessing that team as the winner than the semi-finals
-    'disappointment': [0, 1, 2, 3, 5], # Most points awarded for the chosen country doing poorly
-    'underdogs': [5, 3, 2, 1, 0] # Most points awarded for the chosen country doing well
+    'disappointment': [0, 1, 2, 3, 4, 6], # Most points awarded for the chosen country doing poorly
+    'underdogs': [6, 4, 3, 2, 1, 0] # Most points awarded for the chosen country doing well
 }
 
 # Function to find the scores
@@ -60,10 +60,10 @@ def scoring_system(predictions, rankings):
             
             # Scale the score for biggest disappointment
             if category == 'disappointment':
-                scores[category] = point_list[tournament_position] * (1 - scaled_ranking)
+                scores[category] = point_list[tournament_position] * scaled_ranking
             # Scale the score for the underdogs
             elif category == 'underdogs':
-                scores[category] = point_list[tournament_position] * scaled_ranking
+                scores[category] = point_list[tournament_position] * (1 - scaled_ranking)
             # The winner and runner up scores are unscaled
             else:
                 scores[category] = point_list[tournament_position]
