@@ -2,7 +2,7 @@
 
 Pick the winners, runners up, biggest disappointment and the underdogs. The winner will be the person who scores the most points!
 
-The rankings are from the [official UEFA website](https://www.uefa.com/nationalassociations/uefarankings/country/?year=2024) and are accurate as of the tournament starting.
+The rankings are from the [official UEFA website](https://inside.fifa.com/fifa-world-ranking/men)and are accurate as of the tournament starting.
 
 We know some of you like data, so here's the scoring system:
 
