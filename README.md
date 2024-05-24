@@ -15,7 +15,7 @@ We know some of you like data, so here's the scoring system:
 |  Round of 16  |         1        |          1          |  4 * (1 - scaled ranking)  | 1 * scaled ranking |
 |  Group stage  |         0        |          0          |  6 * (1 - scaled ranking)  | 0 * scaled ranking |
 
-where the scaled ranking is the $\frac{country   Ranking}{lowest   Country   Ranking}$ i.e. $\frac{country   Ranking}{Albania    (47)}$. This scales the points so that _bigger_ disappointments and underdogs get more points.
+where the scaled ranking is the $\frac{country   Ranking}{lowest   Country   Ranking}$ i.e. $\frac{country   Ranking}{Georgia (75)}$. This scales the points so that _bigger_ disappointments and underdogs get more points.
 
 #### Want to see how we calculate the final scores?
 
